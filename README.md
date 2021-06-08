@@ -36,6 +36,7 @@ The following Machine Learning Algorithms used are:
       - Accuracy: 62.5%
 
 There is a report in this repo that goes into the models in more details. If interested in the models you can read that or look at the models themselves (which are also in the repo).
+
 -------------------------------------------------------------------------------------------------
 ## Misc.
 
