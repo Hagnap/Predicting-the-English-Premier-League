@@ -1,0 +1,1540 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Updated_PremierLeague_Stats_From_2014to2021' inline='true' name='federated.0kvnawi1has4cb1fqpw441vsgyc5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Updated_PremierLeague_Stats_From_2014to2021' name='textscan.0enssa912g5gy019qwrcm0bwf4mr'>
+            <connection class='textscan' directory='C:/Users/Jake/Desktop/predicting_the_premier_league-main/League_Result_Data' filename='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='TimeEncoded_PremierLeague_Stats_From_2014to2021' name='textscan.1tmvttc0a9o6hb1ce525b02e1ju7'>
+            <connection class='textscan' directory='C:/Users/Jake/Desktop/predicting_the_premier_league-main/League_Result_Data' filename='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1tmvttc0a9o6hb1ce525b02e1ju7' name='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' table='[TimeEncoded_PremierLeague_Stats_From_2014to2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='integer' name='Season Encoding' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='string' name='YearOfSeason' ordinal='4' />
+            <column datatype='string' name='Time' ordinal='5' />
+            <column datatype='integer' name='Time Encoding' ordinal='6' />
+            <column datatype='string' name='HomeTeam' ordinal='7' />
+            <column datatype='integer' name='HomeTeam Encoding' ordinal='8' />
+            <column datatype='string' name='AwayTeam' ordinal='9' />
+            <column datatype='integer' name='AwayTeam Encoding' ordinal='10' />
+            <column datatype='real' name='FTHG' ordinal='11' />
+            <column datatype='real' name='FTAG' ordinal='12' />
+            <column datatype='string' name='FTR' ordinal='13' />
+            <column datatype='integer' name='FTR Encoding' ordinal='14' />
+            <column datatype='real' name='HTHG' ordinal='15' />
+            <column datatype='real' name='HTAG' ordinal='16' />
+            <column datatype='string' name='HTR' ordinal='17' />
+            <column datatype='string' name='Referee' ordinal='18' />
+            <column datatype='integer' name='Referee Encoding' ordinal='19' />
+            <column datatype='real' name='Fouls Called Per Game' ordinal='20' />
+            <column datatype='real' name='HS' ordinal='21' />
+            <column datatype='real' name='AS' ordinal='22' />
+            <column datatype='real' name='HST' ordinal='23' />
+            <column datatype='real' name='AST' ordinal='24' />
+            <column datatype='real' name='HF' ordinal='25' />
+            <column datatype='real' name='AF' ordinal='26' />
+            <column datatype='real' name='HC' ordinal='27' />
+            <column datatype='real' name='AC' ordinal='28' />
+            <column datatype='real' name='HY' ordinal='29' />
+            <column datatype='real' name='AY' ordinal='30' />
+            <column datatype='real' name='HR' ordinal='31' />
+            <column datatype='real' name='AR' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1tmvttc0a9o6hb1ce525b02e1ju7' name='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' table='[TimeEncoded_PremierLeague_Stats_From_2014to2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='integer' name='Season Encoding' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='string' name='YearOfSeason' ordinal='4' />
+            <column datatype='string' name='Time' ordinal='5' />
+            <column datatype='integer' name='Time Encoding' ordinal='6' />
+            <column datatype='string' name='HomeTeam' ordinal='7' />
+            <column datatype='integer' name='HomeTeam Encoding' ordinal='8' />
+            <column datatype='string' name='AwayTeam' ordinal='9' />
+            <column datatype='integer' name='AwayTeam Encoding' ordinal='10' />
+            <column datatype='real' name='FTHG' ordinal='11' />
+            <column datatype='real' name='FTAG' ordinal='12' />
+            <column datatype='string' name='FTR' ordinal='13' />
+            <column datatype='integer' name='FTR Encoding' ordinal='14' />
+            <column datatype='real' name='HTHG' ordinal='15' />
+            <column datatype='real' name='HTAG' ordinal='16' />
+            <column datatype='string' name='HTR' ordinal='17' />
+            <column datatype='string' name='Referee' ordinal='18' />
+            <column datatype='integer' name='Referee Encoding' ordinal='19' />
+            <column datatype='real' name='Fouls Called Per Game' ordinal='20' />
+            <column datatype='real' name='HS' ordinal='21' />
+            <column datatype='real' name='AS' ordinal='22' />
+            <column datatype='real' name='HST' ordinal='23' />
+            <column datatype='real' name='AST' ordinal='24' />
+            <column datatype='real' name='HF' ordinal='25' />
+            <column datatype='real' name='AF' ordinal='26' />
+            <column datatype='real' name='HC' ordinal='27' />
+            <column datatype='real' name='AC' ordinal='28' />
+            <column datatype='real' name='HY' ordinal='29' />
+            <column datatype='real' name='AY' ordinal='30' />
+            <column datatype='real' name='HR' ordinal='31' />
+            <column datatype='real' name='AR' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Season Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Season Encoding</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearOfSeason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[YearOfSeason]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>YearOfSeason</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Time Encoding</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeTeam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HomeTeam]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HomeTeam</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeTeam Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HomeTeam Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HomeTeam Encoding</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AwayTeam</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AwayTeam]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AwayTeam</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AwayTeam Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AwayTeam Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AwayTeam Encoding</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTHG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FTHG]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>FTHG</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTAG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FTAG]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>FTAG</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FTR]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>FTR</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTR Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FTR Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>FTR Encoding</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HTHG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HTHG]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HTHG</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HTAG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HTAG]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HTAG</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HTR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HTR]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HTR</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Referee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Referee]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Referee</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Referee Encoding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Referee Encoding]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Referee Encoding</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fouls Called Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fouls Called Per Game]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>Fouls Called Per Game</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HS]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HS</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AS]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AS</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HST]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HST</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AST]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AST</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HF]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HF</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AF]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AF</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HC]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HC</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AC]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AC</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HY]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HY</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AY]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AY</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HR]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>HR</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AR]</local-name>
+            <parent-name>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv]</parent-name>
+            <remote-alias>AR</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Away Team' datatype='string' name='[AwayTeam]' role='dimension' type='nominal' />
+      <column caption='TotalShots' datatype='real' name='[Calculation_1395271489434210306]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AS]+[HS]' />
+      </column>
+      <column caption='TotalFouls' datatype='real' name='[Calculation_1395271489438314499]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[HF] + [AF]' />
+      </column>
+      <column caption='Result Label' datatype='string' name='[Calculation_1985524521557897216]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE  [FTR]&#13;&#10;WHEN &quot;A&quot;&#13;&#10;THEN &quot;Home Team Lost At Home&quot;&#13;&#10;WHEN &quot;H&quot;&#13;&#10;THEN &quot;Home Team Won At Home&quot;&#13;&#10;WHEN &quot;D&quot;&#13;&#10;THEN &quot;Home Team Drew At Home&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Ftag' datatype='real' name='[FTAG]' role='measure' type='quantitative' />
+      <column caption='Fthg' datatype='real' name='[FTHG]' role='measure' type='quantitative' />
+      <column datatype='string' name='[FTR]' role='dimension' type='nominal' />
+      <column caption='Htag' datatype='real' name='[HTAG]' role='measure' type='quantitative' />
+      <column caption='Hthg' datatype='real' name='[HTHG]' role='measure' type='quantitative' />
+      <column caption='Home Team' datatype='string' name='[HomeTeam]' role='dimension' type='nominal' />
+      <column caption='Season1' datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <column caption='Year Of Season' datatype='string' name='[YearOfSeason]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' datatype='table' name='[__tableau_internal_object_id__].[TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019]' role='measure' type='quantitative' />
+      <column-instance column='[FTR]' derivation='None' name='[none:FTR:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:FTR:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;H&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' id='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv_C52A6664D93648D585ADF23F71483019'>
+            <properties context=''>
+              <relation connection='textscan.1tmvttc0a9o6hb1ce525b02e1ju7' name='TimeEncoded_PremierLeague_Stats_From_2014to2021.csv' table='[TimeEncoded_PremierLeague_Stats_From_2014to2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Season' ordinal='1' />
+                  <column datatype='integer' name='Season Encoding' ordinal='2' />
+                  <column datatype='date' name='Date' ordinal='3' />
+                  <column datatype='string' name='YearOfSeason' ordinal='4' />
+                  <column datatype='string' name='Time' ordinal='5' />
+                  <column datatype='integer' name='Time Encoding' ordinal='6' />
+                  <column datatype='string' name='HomeTeam' ordinal='7' />
+                  <column datatype='integer' name='HomeTeam Encoding' ordinal='8' />
+                  <column datatype='string' name='AwayTeam' ordinal='9' />
+                  <column datatype='integer' name='AwayTeam Encoding' ordinal='10' />
+                  <column datatype='real' name='FTHG' ordinal='11' />
+                  <column datatype='real' name='FTAG' ordinal='12' />
+                  <column datatype='string' name='FTR' ordinal='13' />
+                  <column datatype='integer' name='FTR Encoding' ordinal='14' />
+                  <column datatype='real' name='HTHG' ordinal='15' />
+                  <column datatype='real' name='HTAG' ordinal='16' />
+                  <column datatype='string' name='HTR' ordinal='17' />
+                  <column datatype='string' name='Referee' ordinal='18' />
+                  <column datatype='integer' name='Referee Encoding' ordinal='19' />
+                  <column datatype='real' name='Fouls Called Per Game' ordinal='20' />
+                  <column datatype='real' name='HS' ordinal='21' />
+                  <column datatype='real' name='AS' ordinal='22' />
+                  <column datatype='real' name='HST' ordinal='23' />
+                  <column datatype='real' name='AST' ordinal='24' />
+                  <column datatype='real' name='HF' ordinal='25' />
+                  <column datatype='real' name='AF' ordinal='26' />
+                  <column datatype='real' name='HC' ordinal='27' />
+                  <column datatype='real' name='AC' ordinal='28' />
+                  <column datatype='real' name='HY' ordinal='29' />
+                  <column datatype='real' name='AY' ordinal='30' />
+                  <column datatype='real' name='HR' ordinal='31' />
+                  <column datatype='real' name='AR' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Home Team &amp; Seasons'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>This visual showcases how each HomeTeam performs during the various times of the year (ie the different seasons). The performance is based off the number of wins, the more the better. The size of the circles are dependent on the amount of wins for the HomeTeam and this visual is filtered by AwayTeams. This allows to see how teams fare against one another in throughout the year.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_PremierLeague_Stats_From_2014to2021' name='federated.0kvnawi1has4cb1fqpw441vsgyc5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kvnawi1has4cb1fqpw441vsgyc5'>
+            <column caption='Away Team' datatype='string' name='[AwayTeam]' role='dimension' type='nominal' />
+            <column caption='COUNT(IF CONTAINS([FTR], &apos;H&apos;) == TRUE THEN [FTR] END)' datatype='integer' name='[Calculation_1015280277923262465]' role='measure' type='quantitative' user:unnamed='Home Team &amp; Seasons'>
+              <calculation class='tableau' formula='COUNT(IF CONTAINS([FTR], &apos;H&apos;) == TRUE THEN [FTR] END)' />
+            </column>
+            <column datatype='string' name='[FTR]' role='dimension' type='nominal' />
+            <column caption='Home Team' datatype='string' name='[HomeTeam]' role='dimension' type='nominal' />
+            <column caption='Season1' datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[AwayTeam]' derivation='None' name='[none:AwayTeam:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HomeTeam]' derivation='None' name='[none:HomeTeam:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1015280277923262465]' derivation='User' name='[usr:Calculation_1015280277923262465:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]'>
+            <groupfilter function='level-members' level='[none:AwayTeam:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Season:nk]'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]</column>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Season:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[usr:Calculation_1015280277923262465:qk]' />
+              <text column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B6D04EB0-72DF-4D62-AA4D-736C4DE23BC0}' />
+    </worksheet>
+    <worksheet name='Home Team Aggresion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Home Team Aggression&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>This visual allows us to evaluate a home-team&apos;s aggressive nature against a certain team, certain teams, or every team they played against. Aggressiveness in this scenario is measured by rough are they playing (ie the number of fouls) and how many shots they take. This can also be filtered by each referee since referees can have their own impact on  a game.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_PremierLeague_Stats_From_2014to2021' name='federated.0kvnawi1has4cb1fqpw441vsgyc5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kvnawi1has4cb1fqpw441vsgyc5'>
+            <column datatype='real' name='[AF]' role='measure' type='quantitative' />
+            <column caption='TotalFouls' datatype='real' name='[Calculation_1395271489438314499]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[HF] + [AF]' />
+            </column>
+            <column caption='Result Label' datatype='string' name='[Calculation_1985524521557897216]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE  [FTR]&#13;&#10;WHEN &quot;A&quot;&#13;&#10;THEN &quot;Home Team Lost At Home&quot;&#13;&#10;WHEN &quot;H&quot;&#13;&#10;THEN &quot;Home Team Won At Home&quot;&#13;&#10;WHEN &quot;D&quot;&#13;&#10;THEN &quot;Home Team Drew At Home&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[FTR]' role='dimension' type='nominal' />
+            <column datatype='real' name='[HF]' role='measure' type='quantitative' />
+            <column datatype='real' name='[HS]' role='measure' type='quantitative' />
+            <column caption='Home Team' datatype='string' name='[HomeTeam]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Referee]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1985524521557897216]' derivation='None' name='[none:Calculation_1985524521557897216:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HomeTeam]' derivation='None' name='[none:HomeTeam:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Referee]' derivation='None' name='[none:Referee:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1395271489438314499]' derivation='Sum' name='[sum:Calculation_1395271489438314499:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HS]' derivation='Sum' name='[sum:HS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Arsenal&quot;' />
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Chelsea&quot;' />
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Liverpool&quot;' />
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Man City&quot;' />
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Man United&quot;' />
+              <groupfilter function='member' level='[none:HomeTeam:nk]' member='&quot;Tottenham&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Referee:nk]'>
+            <groupfilter function='level-members' level='[none:Referee:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]</column>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Referee:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489438314499:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#00aa00</color>
+                <color>#0fae0f</color>
+                <color>#20b220</color>
+                <color>#31b631</color>
+                <color>#44bb44</color>
+                <color>#56bf56</color>
+                <color>#6ac36a</color>
+                <color>#7fc77f</color>
+                <color>#94cc94</color>
+                <color>#aad0aa</color>
+                <color>#c1d4c1</color>
+                <color>#d9d9d9</color>
+                <color>#dcc8c8</color>
+                <color>#dfb7b7</color>
+                <color>#e3a5a5</color>
+                <color>#e69292</color>
+                <color>#ea7f7f</color>
+                <color>#ed6c6c</color>
+                <color>#f15757</color>
+                <color>#f44242</color>
+                <color>#f82d2d</color>
+                <color>#fb1616</color>
+                <color>#ff0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:HS:qk]' />
+              <color column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489438314499:qk]' />
+              <text column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Calculation_1985524521557897216:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>FTR:	IF FTS ==&apos;A&apos;  THEN &apos;Home Team Lost&apos;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>TotalShots:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:HS:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>TotalFouls:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489438314499:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DD1130E9-A8E0-4652-BCE1-C6EFF1571833}' />
+    </worksheet>
+    <worksheet name='Time of Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Time of Day</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>This visual is used to showcase the number of shots during the various parts of the year. Here we used TotalShots (HomeTeam Shots + AwayTeamShots) to see if the time idea of day had a potential impact on the offensive performance of teams. The shape of circles is decided by the number of wins during that season to showcase the effect of the number of shots during that time of year.
+
+This visual is also filtered by AwayTeam and HomeTeam so we can select individual teams to check how they performed offensively given various conditions</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Updated_PremierLeague_Stats_From_2014to2021' name='federated.0kvnawi1has4cb1fqpw441vsgyc5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kvnawi1has4cb1fqpw441vsgyc5'>
+            <column datatype='real' name='[AS]' role='measure' type='quantitative' />
+            <column caption='Away Team' datatype='string' name='[AwayTeam]' role='dimension' type='nominal' />
+            <column caption='TotalShots' datatype='real' name='[Calculation_1395271489434210306]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AS]+[HS]' />
+            </column>
+            <column caption='SUM(IF [FTR Encoding]=0 THEN 1 END)' datatype='integer' name='[Calculation_1541919955042312194]' role='measure' type='quantitative' user:unnamed='Time of Day'>
+              <calculation class='tableau' formula='SUM(IF [FTR Encoding]=0 THEN 1 END)' />
+            </column>
+            <column datatype='integer' name='[FTR Encoding]' role='measure' type='quantitative' />
+            <column datatype='real' name='[HS]' role='measure' type='quantitative' />
+            <column caption='Home Team' datatype='string' name='[HomeTeam]' role='dimension' type='nominal' />
+            <column caption='Season1' datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Time]' role='dimension' type='nominal' />
+            <column-instance column='[AwayTeam]' derivation='None' name='[none:AwayTeam:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HomeTeam]' derivation='None' name='[none:HomeTeam:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time]' derivation='None' name='[none:Time:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1395271489434210306]' derivation='Sum' name='[sum:Calculation_1395271489434210306:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1541919955042312194]' derivation='User' name='[usr:Calculation_1541919955042312194:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]'>
+            <groupfilter function='level-members' level='[none:AwayTeam:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]'>
+            <groupfilter function='level-members' level='[none:HomeTeam:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Time:nk]'>
+            <groupfilter function='member' level='[none:Time:nk]' member='&quot;Late-Day&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]</column>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]</column>
+            <column>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Time:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[usr:Calculation_1541919955042312194:qk]' />
+              <text column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Season:nk]' />
+              <color column='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489434210306:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A3CEAD1A-F321-49BB-98E7-A204A3E91EE9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Home Team &amp; Seasons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Season:nk]' type='filter' />
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:FTR:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E3745900-A78E-42FE-8159-155749E99B6E}' />
+    </window>
+    <window class='worksheet' name='Time of Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='148'>
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Time:nk]' type='filter' />
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]' type='filter' />
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489434210306:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Calculation_1541919955041878016:qk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Calculation_1541919955041992705:qk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:FTR:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Season:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Time:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6D50729A-5C86-41C3-871D-1C5167D7C97A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Home Team Aggresion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Referee:nk]' type='filter' />
+            <card param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489438314499:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:AwayTeam:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Calculation_1985524521557897216:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:FTR:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HTR:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:HomeTeam:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Referee:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[none:Time:nk]</field>
+            <field>[federated.0kvnawi1has4cb1fqpw441vsgyc5].[sum:Calculation_1395271489438314499:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B6DA7448-E8DD-416C-8773-A1BF8F60EB54}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Home Team &amp; Seasons' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO2dZYAc15mu36pq5u7pYWbWiFkWy3bM7NhJNpx4sxu4zgaWrjfJ5oYZbG9g
+      49iR2Y5ZlmWRJY0YZjTMjM1cXVX3R82MB7pnGqq7R6N5/thqOtXT5zt1zgfvR3Acx2GZZa5T
+      yERfwDLLJBJRoi/gWodhWQyOO9AxYEbfqA2jFhccLi/cPj9IgoBMKoJeJUOqQYXsFA3y0nQw
+      ahUgCCLRl74Mlg0gImg/g+aecRy/0oNLbUMYtTjBsKHtJCUiCulJKmyszMK2FTnIStYsG0MC
+      IZbPAKHjoxkcudSFN062oHvYGvXnkSSB6oIU3L6lFKuK00CRyzvSeLNsACHAMCxONfThmYN1
+      GBizC/75BAFsrc7B529bA41SKvjnLxOcZQNYgHGbC79/9RzONg3EfCyDWo7P3bYam6uyYz7W
+      MjzLBjAPl9uG8KuXzmDM6orbmAQB3LiuCJ/+yEpIJctHtFizbAAB4DgOxy5347evnIWXZhJy
+      DWtK0/Ho/ZuglEsSMv71wrIBzILjOBw4044nXz8fsmcnVpTlJOHfP3ED1Irlc0GsWHY7TIPj
+      OJxu7Mcf3ryQ8MkPAE094/j5C7Xw0v5EX8qSZdkAptE5aMEvXqgF7WcTfSlTnG8exJ/evIjl
+      G3VsWD5lTeDy0Pjli6fh9i6+1fbA2XasLE7DpsrwvUMsx8Fsc6OhexR9IzaMWl1gWQ5iEQWD
+      Wo7CTD1KspOgVUqvy4DcsgGA3/o8e6geXUOWRF9KQDgOeOK18yjLMUKvlof0Hq/Pj6OXu/H+
+      hU4094yDnecOQhIEKvKTccvGYqwvz4SIun42BsuHYABdQxb8y+8OwudPjMcnVPatK8SX7lo3
+      72tYlsOpq7145mAd+sMM2hEACjL0+Mwtq1CRl3xd3BGuewPgOA4/eOYEahv6En0pCyKiSPz6
+      Kzcjw6gO+LyX9uMPb1zEu2fboxqHIgncs70C9++sgFhERfVZi53r514XhO4hK841xz7KKwR+
+      hsXLxxoDHohdHhrfe+p41JMfABiWw/OHr+JXL52BL0FxkHhx3RvAgbPt8DOLx+uzEB/U9cDi
+      8Mx4zOdn8IsXa3GlfVjQsY5d7saTr59f0h6o69oAaD+DD670JPoywsLt9eN0Y/+Mx1443IDT
+      Df1B3hEdB8914OC5jph89mLgujaAq12jsLm8ib6MsDlZ1zv1/+0DJrxyvDGm4z114HJc86Hi
+      yXVtAJdahxJ9CRHR2D0Gl4cGy3J45mBdzAN3dpcPz71/NaZjJIrr1gA4jkNj91iiLyMifH4G
+      3cMW9I3acLElPkZ8+EIn7Nfg3XIhrlsDcPv8GDI5En0ZEdMxYMbxK93zBriEhGZYHL/Gzkuh
+      cN0agN3lvSb3/5P0j9lxLg5FOtO50DIY1/HiwXVrAA6XD+wiyPiMlJ5hKwbH43sH6xqyLPpo
+      ebhctwZgd/sE+ZyKvGSIRSTWlmYEfT43TQu1QgKlTCzImAB/B/AESZOmSAIE+ByfcFjo9Tan
+      F06B/m6Lhes2GU6o1Z8g+PwZnVqGkuwk5KfrMDTugIgicbl9GB6fHz3DVpRkJyEvTYf2fjM8
+      Phr9Y3ZEs323Ob1B31+clQSGZUGRJKxOD+wuH2g/A4okwYFDik4Jl5f3IlETiW95aTq4vTTa
+      +k3QKqUYMjnnfK6XZhJWIRcrrlsDECrj0e7yITtZg/5RG1RyCViWg8XpAcfxahJJGjk4joOf
+      YWF1eOB0+5CWpELfaHTqEiRJAEHmostLT9xxJCjK1KN31AaFVAyO40AzLHpHbMhO1iBJq4DV
+      6YXZ7obD5QUIAquK0iCViDBsdgY0sKWWIHfdGoBQ25GeYSt65tEImq4m0d5vRqpBieae8ajH
+      TdEp0TdqC/icxeHBsMmBDKMabi+NwXEHVHIJGJaFyeZGYYYeNpcPDg8NhmXhdNPQq2Uw29ww
+      2dwwaOQBJ79YREK8xFKlF70B0H4GoxYXmnvG0DlkweC4A5aJlZTjAKmEgkouQapehaxkNYqz
+      k5CfpluwmFyrkkFEkXHPAxoOsLWIhOIsA8asTnh8c28DNifv3eoc/LC+YXok90rHyJz3THcJ
+      B3MPa5VSQc8xi4FFawA9w1YcvtiF0419GAhhv1yHD39UtUKCshwjdq7Kw/ryzIApvSq5BBql
+      FCabW+hLjwvluclo7zejZyR6hbpQyU7RLjmplkX1bViWQ33nCF461ojLbUMRHxLtLh/ONg3g
+      bNMA9CoZbttSihvXF0I17a4gk4iQnaK5Jg2AP3jrsLI4La4GEMzTdS2zKDZ0HMdh1OLEj589
+      icf+fASXWiOf/LMxOzx46sBlfPXX78yJnFbkJgszSJxRyiTITdVh+8rcuI1JEgQ2VmTFbbx4
+      kXADYFkOh8534qu/PoCT9b0xkyMZtbjwk2dP4cf7T8Bs51f9msLUmIwVa8pzjZCIKeSn61CV
+      nxKXMbevzIVRp4jLWPEkoQbgoxk88do5/PaVs3DEKcBysr4P33z8PXQNWVCSk4QkTWhF5ouJ
+      rStyAAAUSeLhvdWgyNi6JuUSEe6+oTymYySKhBmAy0PjR/tP4J0z7XFL6Jpk2OzEvz55CPUd
+      o9iztiCuY0eLTiXD+rLMqX9X5CVj37rCmI55384K5KRqYzpGokjIIdhL+/HT50/FPZlrOk4P
+      je8/fRxfuH0NZBIRPL7FpwcUiN1r8qGY5Yr8h5tq0DFoFiS+MJt1ZRkoyU7CH964gObecZhs
+      bhAEkKRRoCwnCVtX5KAww8AH5q5B4q4KwXIcfvvyWbx3fnGU2elVMmSnagWvp40FCpkYv/3a
+      R2AIoA1kcXjw2J+PzPD9R0uqXgmtSoaW3uCGRRDA6pJ0fPaW1UHVKhYzcTUAjuPw5qlW/OGN
+      C1hMeZhapRROD73oi+Mf2lOFB3ZVBX3e5vLiNy+fibo+mCQIaFVS2F2+kP8maoUEX39gM2qK
+      Uq+pdIm4GkD3kAXfePy9RbndoEhiUQjiBiMnRYsffnHPnO3PbBiWxdu1bdh/qD4ix4JeLcPG
+      iiwcutAZtiSKXCrCf392FwozDSG/x+r0oHPQgqFxB8x2N1xeGhKxCBqFBFnJGuSm6mLqfYqb
+      AfgZFo/9+QjqAoThFwMEwfvX4+WNCgexiMR3P7MT5QvELRiWhcfrh8/PwOzw4J3aNpxu7IfV
+      4Zn3jksSBHJStdi1Og+bq7Lxb//zPobNkaVs5KZq8aNH9kI2T8TY7vLiZH0vjl/pQVPP2Lw1
+      zSKKRKZRja0rcrBzVR6SdcqIrivo5wv6afNwuqEP9Yt08gO8/qZeJYNMIlp0CggP7qpCWY4x
+      4HNOjw+1V/tQ3zmC1j4TLA4PPD7/lACumCIhokiIRCRS9Sro1TL4/AwUUjF0Khny0nSozE9G
+      TooWFEXi5WONEU9+AOgetuLopS7cuL5oznO0n8HfP2jGGydbYJ6lbRQMP8Oie9iK7oN1ePFI
+      A3avKcBDe6oE65kQFwOg/QxeONKwqPb9gegbs+ETN9bghcMNcHnpRF8OAODmDUW4e3v5jH01
+      x3EYNjvx6vEmHL7YFXRLyfj8mJxmNMOia8gCDlrcc0MFNldlzcmR8jOsIM6JA2faZxgAx3Fo
+      6zfhFy+cDprBGgpemsFbta04Wd+Lz9+2BpuqssIu+plNXOIATT1jgnonYgXHAa19JnzzoS3z
+      3sLjxbYVOfj0Latm/Mg+msGz71/FV3/9Dt4+3Rb2eap7yIqfPX8K33riEDoGzDOeG7e60B9l
+      nQLAZ6FO1ltzHIfjV3rwH388HNXkn47F4cFPnj2JZw7WRa1aFxcDeLu2LR7DCMLphj5kJqvx
+      n/9wA/RqWcKu47bNJfjKvRsgmbZKm2xuPPa/R/Dsofqo+xi09ZvwL78/iLdqW6eq46arSRvU
+      chRnGeYNgKnkEkyaZppBNfU4y3EYHLdPtZv6+Qu1gvddYDkOLx5pwO9ePRdVdV/Mlzmn24fL
+      14CPfRKG5XC6oR+3bi7B9z+3Gz97/hRa+0xxG18qpvDpj6zCvnWFM4JLw2YHvvO/xwRbRQF+
+      y/Pk6+dhsrvx8J7qGeWOYhEJpUwChZRDql4JhmEhFlNwe2gABPwsy5dUkgQ8tB+5qTro1bIp
+      rSWvj8HZpgE8+fr5mIoPvHu2HUkaOR7YVRmR+zXmd4CWvvFF6VmZj/MT8h8ZRjW+/7nduHdH
+      BcSi2N8sCzP1+N5nd+GmDUUzJr/V6cF//e9RQSf/JBzHa4u+dqJ5RrELzbDoGDRDpZCAYTn4
+      WQ69Iza09ZsBgq+oc3tp0BMqEU09Y7A6P5SZcbh9+M3LZ+LiWn7+8FVcaotMICzmbtBnD9Vj
+      /6H6WA4hOBqlFH/8xu2QiPntB8dxaB8wY/979bjQOij4iiYWkXhwVxVu31o6Y8sD8Kv0D/92
+      AmcaYyN+O3UNFIl/uns9fvXS6agnrYgiUZ5rjKvLO0WnxC+/fNOCcZLZxHQLxHEcWvvjt30Q
+      CpeHxrjNhfQkPrRPEASKMg34909sQ1PPOF453ohLrUNRKySoFRJsX5mHj2woQmayJuBr3r/Q
+      GfPJD/Ar/jMH65BpVKNnJLo7jURMxT3eM2Jx4o1TLbh/Z2VY74upAbAch6E4izcJgZ9hMTTu
+      mDKASQiCQHmuEWU5WzFuc6P2ah8utA6itdcEuzu4TMkkFEVAr5KjPNeIjZVZWFWUNm/tstPt
+      wzMH64T4SiExYnEiPUm18AsXwJugSP87p9twy6ZiKGWhNxePrQGw3FSB9rXG+DylkgRBwKhV
+      4NbNJbh1cwk8Pj8Gx+0YGLNj1OKC3eWDw+1Fz4gNnYNmeGkGagVfxVWak4SiDAMq85MXLNx/
+      73znnGYYscbq9CInVTuv0sV8pCepMBJFIC0a+EWpH7vX5If8nhhvgfhIZTSk6JUYMTuhUUhg
+      c4X2WQT4A2y4TeKmE04gTCYRIT9dj/x0PZxuH94+3Ybjdd0YmaatY3V4ccUxPJV1KhaR2FyV
+      jbu2lSE/XT/nM2k/g4Pnom93FC4uD40NGzPh8tBhR8TTDCqsKcnAG6daYnR1C3Oirge7VueF
+      7BGKrQGAi/pANemZyE3TwWR3w6hRYFVJGi61DsPPsFDKxPDSDCRiCh6fHzKJCA6XDwzHAYjc
+      AMI96HIch/PNg/jDmxdC0uyk/SyOXurGibpe3LyhCA/vrYZc+uEBrnfEhr4o9+KR0jFgxv/9
+      5Hb84JkPQl5E8tN1+OZDW/D438/F+Ormp7F7DCzHgQrRAGLq2yNAzPFqhItWKUNuqhYuD43s
+      ZC2GzU40do/B5vKipW8cEjE1o6Js8mtH29wtnDJDjuPw0tFGfP/p42EL1voZFq+fbMFvXzk7
+      5VIEgAutgwlLHWnsGUOyToGf/OM+3LO9fIaaxmy0Sike3F2FH35xD9IMqoRH/F0TQmChEtM7
+      AEkSUMrF8Nkjn4zT/bvtE6H76cJNl9qGYA9xaxQOqhCTrTiOwyvHm/DXd69ENd7xKz1QysT4
+      wu1rQZIEehO0+gOAx8v3TshP1+MTN9bgji2luNI+jKZpFWFGjQKlOUlYUZg6lZhmd3nn/BYE
+      wS+Es8teSYLg0xgICKYAMsmwyYGsIF612cTWAAgCOpUMZnvsDnKxmPwAkKwNLQf9Qssgno5y
+      8k/yzpl2ZKdocevmkpAPkiq5BFqllBcPC/C8VEyF7a5lOQ5jVtfU2USrkmFbTS621cwvw+Jw
+      +8DNuoqt1TkYHLdDJhGjd8QKggBYDrhhRQ4cbhoWhwetfeNQK6SQS0QYtbpQkKFDx4AF2Ska
+      9I/aoZCJQRB8GWuKTgHaz8Lq9ID2s5BJREjRK2d0+3F6Qj+/xfwOkJGkTvhtMVwkIgqphoXz
+      zl0eGk++fl7QaOffDtVhfXkmHCEadoZRDamYAkkSGDE7oZRJIJeKIBFT8PoYaFVSuL00HG4a
+      DrcPIooMKTIfziSahGE5zLbC9gEzUvVKsCyH7BQtclK1GLU40TdqA0mSGLO6UJKdhEyjGgPj
+      DqgUEvj9LDjw3rbJegCH2wejVgGG5eDxebGlKgcmuxt2l3dO1Vo4IgsxzwUqzDTgRH3vwi9c
+      ROjVMhhCkEs5eK49oIx4NDjdNF462vjhYWYBKJIASRJIS1KD44DsFA0au8egUkhAkvwEqsxL
+      QdewBQUyPToGzCEZQCTbErlExF/3tPeqFRLYXF6MW/mtk59h4fLSsLu8IEkSbg8Nj88PAsCg
+      yTFhKBrQfgYmmxu5aVp0Dlng9tDQKKXw+Rmk6JRoH+Bl5tUK6RxjDSeTN+YGUJWfPPtvsuip
+      yEsGRc7vH+DdlLEp7D9Z3wNdgML3QJhsbqTqlWjqHkVumg6tfSZYHZ6pVZEiCbi9NJxuGiqZ
+      BOO20FybCmn4IrhalQxiiprRRWa2UkWg7bDLO9PlOlmQM2RyzDjvuScCbAttqcPReoq5AeSn
+      62HQyOcNLC02aooWVowbGLPH7KBqc/n402MIDJudUxNmesXd9FV+MkltMMSmgAQBpOjDr8MV
+      USQyjGp0DSVuy0sQQKYxtAMwEIdsUImYwqaq7FgPIxhqhQRrShYWgZ1PKkQIPALnz4eDSi5B
+      qiGylIjy3MClm/GiIEMPuTT0dT0uBTF71xZEXboWLzZWZEGjXNgFGmw1LclOwsqiNAD8dngy
+      kCeiSKgVvD89lD2qViUN9RggOIUZ+oi2QACwoTxz4RfFkFXF6WHVBcSl7i8nRYtVJWk437y4
+      22yKRSTu2Foa0mtdQbwkOpUMYopEbqoWIooEy3EwahWwu/jWSEPjjolcGwvkUjE8Pj8UMjEu
+      NM8MfCXrlJCIqKjSOSJlU2Xkd+yyXONU+kq8EVMkdq7KC+s9cbkDkCSB+3dWxlzENVq2Vucg
+      OyU0DcxATTcmkUpEEIso9IxYYVDLIRHzXWxaesfh9tFwe2mo5FIoZGL4GRZjFtecVUsll4SV
+      1CUUKrkEm6oil0GXS8XYlyC91ZqitLDV6eJW+V2WY8QNNbk4fLErXkOGhVohwcN7q0N+fTBP
+      w+zc/cvtw6jKT0bPsA2mCVn27qGFMy2TtQrsW1eIVz9ojmtG7Y3rC6FVzqyF9nj9MNndGLO6
+      4HD7QPtZSMQktEoZkrRyGNTyGQvCrZtL8fbptrg6PkQUiY/trQ57qx1X6YN/uKkGdR3DGLMu
+      Po/QQ3uqwxJdKs4KTf3Mz7C41BZ+TXR+ug5qhRQf3V2FJ147H/b7I8GoVeCubWXgOA5jVjdO
+      Xe3FueYBdA9ZYXN5AyYIiigSOpUMxVkGrC5Jx+bKbCjlYnzy5pX42fOnBE9zCMYtm4qRl64L
+      +31xNQC9Wo4v37MB3/nLsUWlw7l1RQ5uCiDkNB9FWQZoFNIp+Q8hoSgCNRMH6b1rC3CmsR8X
+      WyOreQ1nzM/fvgadgxa8VduKM439IUW4/QyLMasLY1YXTl3tw5Ovn8cNNbm4a1sZ9q4txLtn
+      Y5/SXZZjxEd3Vy3OovjZ1BSl4WN7qxPm4ZhNYYYej9yxdqoIneM4MAwL2s/ARzOg/UzA0LpU
+      LMLmKPbK81GVlwLjRC6SWEThy/dsQGaMlZe31+Th2KVuPPbnIzh1tS/i9A7az+LQ+U48+tt3
+      wbIsijLn1joISapBif/zwKYZqeThEHd5dIDP1dj/Xh2eP9wQ76FnkGlU47FP7YBUIkJdxzBa
+      esfRNWjBmNUFL82AYViIRPxeNz1JhbIcI8rzkpGfrgNJEOgfs+Nrv35H0O7pJEHgsU/vmNO+
+      aWDMju/+5SgGYlBiqlFK4fezMVHDU8kl8E0sJkKTlazBv318W1Sy7AkxAIAvOHnu/Xo8d/hq
+      3PaJ08lN1eK2LaU43zyAS21DIQs3kSSBTKMaO1bmYe+6Arx1qhXPvn9VsOvaXpOLr92/MeDt
+      fMzqwg//dkKwIBxF8mnK8fj7yyQi+OjAd9NIWF+eiUfuWBtSztZ8JMwAAH678d75Tjz5+vmY
+      rBDBUCskSNIo0D1sierH1yqluHlDES63D89Ix42U7BQNvv+53VApJBgad6B/zIZxmxtenx8U
+      SUKrkiJZp8Tphj68dqIlqnNUdooGUokIbXES/SIIYGVRGkYtrqj0jbRKKR7YVYV96wrmdUWH
+      fF2JNACAN4KuISt+8/JpXnQphkxmTs4nxx0JqXolzA5PVEacnqTCw3uqUdc5gvPNgzDb3QH3
+      4QQByCViGDRyjFicoP1MyEZMEgSyUjS4Y0speoat+PuJ5oivNxJIgsAXbl8DiZjC6yea0TVs
+      Dbn0NMOoxs5Vebh5Q5FgytDAIjCASXw0gzdOtuCFI8IrMxMACjL1GLe6Y6qyoFZIIirQkU4E
+      ykx2d9h3JKmYQlaKhr+jDVkwYnHO+AylTIzsFA3Kc5OxrjwTJVkG1Db042fPnYp7c8LJ6/1/
+      X9iN/HQ9eoasuNQ2hIauUQyZHLBMZLESBAGNUoo0vRJluUZUFaSgODNpSqhMSOLeIsnpoTEw
+      Zkf3sBXDJgesTi/8DAOpWASlnC/mqO8YQXPPeNSGIBFRWFGUih0r8/DS0YaYF+aQBIF15RkY
+      t7rRPmBacDJrlVJwgCCBruIsA758zwakGVRwTUgWyiQiKKRikCQxdaYYMjnwL78/mFC5mpxU
+      LX70xT1TnhuO4+vIOO7DghqCIPhyyhjnkMXcADiOg59hcepqH45f6UFj92hIq+RkKZ9ETEEi
+      okLWFxVRJEqyk7CxIgvryzOgVcrwX385iiYB9uihIBaR+Mq9G2DUKlB7tQ9NPeMYNjvg9NCg
+      SAIGtRxFmQasKk7D2eYBnKzvFewQqlFI8X8e2IiVRWkBJw7Hcfjpc6dw/EqPMANGwcf3rcA9
+      s/oeJIKYGoDT48MbJ1vwVm1bVFsPo1aBzVVZyE3Vwer0wGTzwO2lwXIcJGIKWiVfwVWQrkNe
+      ug5SMR/fY1kOv3zxNI5c6hLoG4WGUibGD7+4J2heEe1n8KuXzuDY5W7Bx6ZIAt98eGvArMzm
+      njF864lDCdn6zEYuFeGJr98GbQiZt7EkJgbAcRxqG/rx13cvC9JwYZLsFA0euWMtKvKSF1w5
+      OI7D0Uvd+MWLtQlxs5bnGvHdz+yc46ngOA7/88YFvHmqNWZjK+VifPczu1CY8WEQiuM4/Gj/
+      SZxcROWpH91dhQd3B+96GQ8EjwT7aAZPvHaeF1UScPIDvFjUf/zxMPYfql/QBejy+vGXdy4n
+      ZPIDvEBToHZDtQ19eKs2dpMf4OuKf7z/xIyUbZPdjQstiysd/fDF8DtRCo2gBuB0+/Ddp47h
+      7dOx6wjDsByee/8qfv78KXjp4MGrt0+3TmVfJornDzfMEIp1uHz445sX42KUg+MOvHi0YaqF
+      0KmrfYuuPe2QyYnWvthW1i2EYAZgd3nx3389HreO6x/U9eJnz9UGXEE8Xv+iaMtksrnxQd2H
+      B843a1swaolfB8q3alun6oXrFmmXnivtie0cKogB0H4Gv3jhNK52jQrxcSFT29A3ocszczt0
+      qW1o0bQ6fft024SWjT+md8ZAuL1+vHO6DbSfQXOMa5gjpb7zGjeASV3Mc80DQlxP2Bw814FD
+      5ztnPBaPhhKh0t5vxrjVhcvtwzFVyAvG8Ss9U4Usi5FIZdiFImoDaB8w80JOCeTPb19C/xif
+      X8JxXMJXlemwHIeGrlHUXk2M92Xc6sLphn7B0z+Ewu72wp3AnsxRGQDLcfjTmxdnCCElApeH
+      xtMHroDjOJjtnqg6nceCtn5TXDtNTocDcLE1Mu+PWERifVkGCjP10EzLvzFqFcLl43CAPYF3
+      p6gqws42DqAhzvv+YJy82of2fvO8nqFE0T5gnqFwFm8iTQFRy6XoGLSAYVjUFKXC7fNjRUEK
+      rrSPwO2jUZChh9nmQUaSCsMWXpc0EhcvyyQuMBfxHYBlObx+snlRSR6+drI54ohzWU5ogk5i
+      ioQhRNnCSQbH7QtuQaY3mpYH0Q1K0StBEPxrjVoFknWKkCKpkQjdAnx71txULfRqGS62DsFi
+      96C+cwSjFidMNg9MNr5Q/mrXKCx2DwbGI4j7EIhLC9pgRHwHGDY74u71WYizTQMozgytWH06
+      UokIOrUMRq0ChRl6EASBgTE7SnOS0DdqQ5JGjt5RG0qzjegYNMPvZ8OKMSx0+KVIAmW5RnAc
+      h+LsJIDjMGRywqCRw2Rzw6iVo2/UDp+fQVGmAU4PDaNKPqXGvLU6B8freoImuIkoEgzDhr1Y
+      MSw31TMZ4LdymOZfGIxkws+CnMj8TBQRm97phv6YdgCPBJeHRn1n+EaZnawBx3HIStagZ8QK
+      L+1HVooaCpkY7ES9glREQS4VwaCWI9zsEalk/jReo04BAvwKn6xVwGT3QCwiIRaRUMklaOs3
+      Q0SRGLU4kZumg83phUQsAsfx5YwURc7Yo88mWaeAOAapxEKgnyWpEm8izgX6zz8dxuUI5D5i
+      jUEtT3gEeDZFmXp0DFgSloS2vSYXrf0mDCRAZW4h1pdn4t8+vi1h40d0B6D9TEIVgOfD7l58
+      bVkzkzVR165GQ4ZRjZIQdYziTWVeckLHj8gATHZ3UG3MRONnWIioxB2qAlGWbUReWviiTUIx
+      WR+x2KBIAquK0xJ6DRHNFKvDG3ZghW+WFns4DshKjq2GTjgQBFCZn4y1pekJGV8uFaEkOwk1
+      RWnznhMSQUGGHlkpoWv5x4KIDCCSrEKjVgGFXAKVXIL0JBVSDUroVTKk6BTIS9NBJhGhMEOP
+      lUWpyDCqkZOqhUImRqpeGbbeY3XBwg0u4kWqXoX0JDXWlWdCmoCD6OqSdKjkEihkYuwIUzk5
+      1ty8oWjBTjyxJu6jryxKQ1GmAUkaBbInJMQr85JRmpOEzGQNvDQvolSdn4LS7CToVLKwD49r
+      yzKC+tLjzfaVuZCIqYmqtvg2CiEJArdv+VDu/Y6tpRHr/gtNmkGFrStyEn0ZkRlAOB04JnF6
+      aJRkGdA7YsWoxYVhkwMmmxsURaJ/zI4hkwNmu3ui06EYvaNWDI470B1BslSmUbIW2/YAACAA
+      SURBVI3N1YnvSiOmSOxZ86FU+L3bK2KibBCMNaXpKMlKmvq3UavArZtL4jZ+MAgC+MSNK6ZK
+      VxNJRFegkksgosiwhJlcHjqAwCvvrpzstTU80XFx3OYGIvSwTgZW7t1egWOXuxOaBLZvfSFS
+      9B8qTmcmq3Hn1jI8f1g4JblgyKUifPojq6Y0Tye5Z3s5Tjf0RbSwCMXmymxsrFwch/KI7gA6
+      lWzRbDFmY9TKIRFRSE9S4ZaNxQm7Dq2KN8LpEASBe3eUozQ7Kci7hIEggE/dvDKgZqZMIsJX
+      79sISYKCTyl6JT532+qE7/0niXALJE746T0Yk93NCYLAg7urkJsaWscXISEI4HO3roFBI4fP
+      z2DU4sTAmB0jZicYlsM3ProF2TH6+xEA7r6hHPvWFQZ9TUGGHo8+uAkUFV9JEq1Sim8/vBX6
+      MHOpYknEkeCXjjbgqQNXhL6eqPnyPeuxe9q+e3Dcjh8/exLtMZZdnEREkbhpfSHEIgp9ozZ0
+      DJhhd/ngZ1hQFAGFVIyCDD0kIgqDJoegBSFKmRh3bC2FRilF56AFfj8Lu9sLm9MHkiSglImh
+      U8lAkgTKc5NBEgSeOnA5LtVzZTlJ+MLta1GQEVu59HCJ2ABGzE488rM3F1WjC5VcgscfvWVO
+      rrrZ7sZ//e/RuCjDJesUsDq9IbmKJ727JEFErMc/iUREIcOoxuC4PWS5dqmYwsriNLT1mzAe
+      w649W6tz8KW71kEhWxweqOlEbAAcx+F7Tx3DuUXU+XHfugJ86a71AZ+zODz40d9OxCyDVUSR
+      fHONCCZyik6JJK0cTT1jYStGKGVicByikpEUUSQIgk9xj9YQpzPZd21rdQ4cbhoWhxs+mgVJ
+      EpBLRXxsSCqOq2dsNlEJY11pH8b//dORRaE0RhIEfvZP+5CbqkPXkAWX2obQ1meCxeEBB8Cg
+      kSM7RYPmnjFcbhsW9IfOTtFAp5KhriPyUsz7d1aiMi8ZRy9341Lr0LwJfXKpCGU5RlTkJeOD
+      up6Qmu6FQppBBZ1Khpa+8agyfSe7tWenaDBicaJ/1B70jmjQyJGfpkNVQQo2VGTFvBPOnGuN
+      xgA4jsN3/nJsUQgu7Vqdj71rC/D0u1fQ2DMW9AekSAJyqRguLx11OrdaLsGd28qQYVTjx/tP
+      RrUQSMUUfvzIXuSkakH7WQybHegZtsFsd8PtpSERU9AoZcg0qpGVrIHD7cNjfz4ieB/hwgw9
+      PnnzSpxvGUTt1V6MmF0hfS+KJKCUSeD20aD9LAgg7PqDSV3Xe24ox8ritLjkdEUtjdg7YsXX
+      f3cwoaJLGoUU68szcfRyV8h+f4IAirP4SPOFlsGwzjJpBhV2r+ENTq2Q4l+fPCSI7MjW6hx8
+      /cFNC8o+Otw+/OuTh2Lmyy/LMeI7n94BEUWia8iClt5xdA/zgUmXlwbDsBCLKGiUEqTolMhK
+      1qB9wIzahr6I5OGDXcMnb16J8tzQKvUiJWoD4DgOb55qxf+8cUGoawobrVIKa4Ry33ffUI7b
+      t5TgSvswmnrG0D1kxYjZCZphwbAsvDQDkiBg1MqxuiQDW6qyUZxlADWxOjX3jOEbj78nyPcQ
+      USQef/SWedu1MiyLnz9fG3OF51s3FeOzt66eY4yTUuYEeFdz74gVv3ihNibNTSiSwB1by3D/
+      zoqIm+AtOMZjjz32WDQfQBAEijINEactRItMIoq45hUAmnvGkZOqxc5V+VhbmoHdawpwy6Zi
+      ZCZrMDjugM3phc/PwOmhMWxywumhkZ2qhVohAUEQOHCmXbCDNctxyE7RonCess6zjf3423t1
+      gow3H+0DZqwqTpvqVjkJr9vPG8XZpgH891+PY8gUGxUOjuM1Vus7R7G2NCOiFJyFEGSTRZIE
+      /vnu9dgU5/B2dUEKopWXZzkOf3zz4tSh08+wePb9q/jR/hNo6Brlb/ks3+PAZHfj/Qud+NYT
+      76G2oQ8cx6FNYG3LzsHgK6mfYfH0wbq4aIsyLIenDlwJeE7iOA6Hznfix/tPxkVwq6lnDP/2
+      h0OC1CDPRrBThkRM4av3bcTWOCWhfWRjMbJTNCF3d5wPh9uHd2rbwHEcDpxpw0tHG+Y9E9hd
+      Pvzm5bNo7TNFvPUKxnwF9BdaBuOqpNbQPYqWWQY+KX3/xGvn46oH1T9qx/eeOi64wQl6zJZJ
+      RPja/Zvw4O6qmJ3gpWIKn71lFT55Uw1O1vcJ9rkf1PVg2OTEc+9fDclF6nD78PS7VwQPBM5X
+      +3D0kvANNeaDZTkcudg147GuIQt+/vyphIih9Y3a8MO/nRBUUl3wWSqiSDy4qxLf/cxO5KUJ
+      m4dTlmPE9z+/G7duLkHfqA1Wp3BamwNjdrx9ui2sFb2he1TwiaBXywI+7vTQCZF8vNg6NLUN
+      cntp/PyFWkEbg4fLlfZhvHhUuAbrMUnpJAgCFXnJ+Nk/3YjDF7vw9w+ao7p1F2Tocd+OCmwo
+      z5zyvgyMO4LuhbUqKayOuRNZq5TC5vQG9E9zAE7UhedZof3snHTjaAmWKzM4bo9ph8tgDJkc
+      sDg90KtkePFoo2BBt2h45VgTtlRlI1eAOuuY5jRTJF8Qsr0mF1c7R3H8SjcutvEKY/NtM0QU
+      CYNGjrWlGdi2Igcl2UlztlTz7QUNajkokkR5rhH9ozakGdQYtTqRadTwSskuH3pG5v6Qkezn
+      S7ONgnXCkYoprCwKXCQ+mEBJk74RG68EGOe+wsHw+Rk8fbAO3354a9QLUFyS+kmSQLJeiZqi
+      NOjV8qnAitPjA0WSyErWoCzXiDS9EqkGFbJTNEgzqOYNCM2Xz56VrEGqnoVBw4suySUi0H4G
+      XtoPsYhEVoomoAHoVDKMWMJz6a0uTkP/mA3NPdF7g9aXZwaVTzEHWP0L0nVQyiWo7xyZczfU
+      qWRTdwy9WgaW5ZCiV8KgkaOuYwQuD428NF1I8jZ2lxcvH+tL6NZnNueaB9DaN47SECUtgxEz
+      A+A4DmNWN45e6sL7FzoxZHIEXPVpsGibEG1aWZyGnFQtknXKBaOhaUnBg0XnmgZAT8ij+PwM
+      JCIKfobfrnAsFzREf0NNblj7S6VMjLJcI5K0Cvz7H96PKr9ILhXho3uqgn7vQIdtsYhCXccI
+      1pamw+Nj4PLS0KmkfL49x0sZ7liZh8vtw+gdsUIipkAAKMtOQkVeMi61DaM814jVJemo7+SN
+      YnNVNs42zRQ9HjY7434AXwiW5fBmbeviNAC3l8bLx5rw5qmWkINULi+Nk/W9OFnfi4q8ZPzD
+      TTXzCtbmpemgkovhcM/9fPdEWsbkpJlK05hnAVMrJLhpQyHONPWHfF7ZXJWNJI0CyTol7ttR
+      iWffrw/pfYG4Z3sFMo3Bi2QCRUK9NIPqghQMjDkwMG7HthU5uNo1CoVMglGzE2IRhabeMfj8
+      DGiGxbjVjaudoyjKNKBjwAy3jwZFkugessLt9YNlOTT3jmN01l2wsWt0UTbYON88CIfbB5Vc
+      EvFnCN4mtX3AhJ8/XztV5xspIorE3TeU4f6dlUG1I3+8/wQ+qBOm8cSeNfn4p7vXo65jBD94
+      5oMFDTcnVYvHPrkdSRORUoZl8Zd3LuO1D8JXzN5QkYlH798E6Txlpqcb+/H9vx4P+vxkWnEs
+      DspqhUSwHB+h+eZDW6JS2xDUDVrfOYL/+MPhqCc/wK/ezx9uwE+fOxV073nntrKwNYMCQZEE
+      bttSCoIgUF2Qgq/dvwlJ2uBle2U5RnzzoS1Tk5//DBKfunklPnfbaihDLPwQUyTu3V6Ob3x0
+      y7yTH+BTrql5DnwuLx2TyU+RxKKd/ACibsoYdS7QJPUdI/juU8cEicxOp2/Uhs5BC7ZUZ885
+      8RvUclid3qi7r9y5rQw7VuYB4F24GUkq7FiZB7VcAoZhp5QmKnKTcd/OCnziphroVbI5+3WC
+      IFCcZcC+dYWQiCmMW10B7yQiikSGUY0banJAkSTONg2grmME3cNWOFw+SMW8EvX0z5dLxTh6
+      uTvuWxG1XLqoDr+zkYhI7F6Tv+CZMRiCbIHGLC584/GDvJxJjLh3RwU+trd6zhd1e2l876nj
+      EQeJVhWn4VsPb4UswArMcfzWhvYzIEBAIqbCcrvRfgbDZr4gftzmxpmGPrT2m+Bw++bN55GI
+      KeSkaLB9ZR52rc6f2uP+/u/n8E6cO02W5RjR1DMW1zHDwahV4PFHb4lYYj3qLRDDsvjtq2dj
+      OvkB4JVjjbgc4HYnl4rxrx/fitUl4WtvbqjIxLc/FnjyA3zNgIgiIZeKIZOKwvY5i0UUUnRK
+      DIzbsf+9OlxoHYLdNf/kBwAfzaCt34w/vnkRX/zpG3j2UD2cHh9uXFcYF33VSWQSEaryw1Nv
+      NmjkyJ1Q/FsIITrDWJ2eqNJRovYCnWsajEtFGMNy+Ms7l7HiS6lz9v1KmQT/+rGtePNUK148
+      2rDgnlWjkOKhPVXYu64wZjlLHMeha8iCX710Bh0DkefK210+7D9Uj2NXuvGPd6zDmrIMnGuK
+      T0vaHStzoVUFTs0IBu1nkKJXwubywqCRI1mnhMPlQ5JWjsauUUjEIrAsB4mYgkEtw5jNDQK8
+      504pE0MiomBzeTE4HlpPNdrPRlWJF9UZgGU5/PLFWphivPpPYrZ7eEXh5LnuQookUZZrxL51
+      hUjR84dTP8uB5Ti+RRDLTpXcbanOBgugY8CMEYsTXh8DsYha8CAaKhzH4XRDP37wzAnBOlba
+      XT4cv9KNmsJU9I7YYq7GoVZI8OgDm9E7Ygug6BccP8NCKZMgSS0HSZJweWl0DJjhZ1iU5Sbz
+      sQiCAAe+AJ8kCBjUfL22w+0DSZIgSSKsnsr3bC+PWOgrql+8pW88bno7k7xzug0byjODHnpU
+      cglu3lCMfWsL0dgzhsMXOnGxdQgenx9+hkVTz1jAPa1cKkJ+mh7ryzOwdUUOjFpFRAcrjuNw
+      sr4PP3/hlOCyjLSfxdu1bVApJDEtQeWV5VbBqFWErdjAshyGxh189F+nwKjFhSSNHFIxhabu
+      UcikYoyYneDAgZjY0DEsiyGzAxa7Z+JvHvqKLhFRUXkCozKA2qt9cVeEaOgahcXhCaouxrIc
+      LrQM4qWjjWjsHg35T+n2+tHQPYqG7lHsP1SPtWUZuH9HJfLSw0u4qusYwS9frI2ZJinLcbC7
+      vBCLyJiNcdvmUuxanQcASNIo5n9xAGwuPqdq0i1rWWA3E41nS6OUTCVIRkLEBsCyHK5G0JAu
+      Wrw0g9Y+E9aXZ855rnfEhidfP4+6juGoqqa8NIMTdb0409CPmzYU4aO7q6AMIdposXvwyxdP
+      x9xtyHG8y7UgQx/V+WI2BAHsW1uIf7ipZurul2bgW7MuAuWbgKToVRBHYQARv9PnZ9A3Gn3A
+      KxJm/+gcxxdufOPxg7jSHt3knw7NsHj9ZAu+8fh785YqTl7DXw5ciovMIMB7iqRiCnffUB51
+      WSjAe2Q+cWMNPn/7mhmOgfQkNeSSxafoNkluqjbiGAAQhQE43b45amQyiQgrClPndEIhCQIE
+      wR+sFiIUr8z0ScawfJ3sL188HbO+ZX2jNnz7yUM4O4/3pblnHEfinDDW1D2GkmwD/utTO5Af
+      5lZtOmU5Sfj+53bjrm1lc/7+IopEdUFKtJcaM1YURtcNKGIvkNnhwZunWmc8lmZQQa2Qwkf7
+      UZ5rBEWRIABU5CXDqFWgIF0PiiKRrFNCJhGhPNeIDKMaIopEYaYBaoUUq0vSwTAc8tP5tkkF
+      GXoMm5wz9vJpBhW2VueA5Tj89cAVvHysMeYd6/0MizON/chL0wVUL/vjmxfQI0AKSLiY7B48
+      uLsKe9YWIDdFC6vTi1HLwnchiiSglkunvk9LrwnnWgbROWAGzbBI0sqnJMwZlkNtg3Dlp0Ih
+      l4rw2VtXR9VoQ9BsUKvTA41SivK8ZIxaXMhN1cFL+2FxeED72anDTnGWAW4vja4hK+8TFlHg
+      JtyVwyYntCopWI6DUi7GsNkxldY8ddETst7v1LbhleNNQn6FefH4/Pjpcyfx/z6/e0qGHQBG
+      LU6cbY6Pb342DV2j6B22IS9dh201udhWk4sRsxN1HcPoGLBgxOKEfeJQqlFKoVVK0TNsQ+eg
+      GTaXFzaXN6Col1wiwk0binD7llKsLuX7jC22jNBNlVlzhJDDJWID4HVxZh6OXF4awyYHmnvG
+      oFVK0dI7Ds2EaJVKJp7KizHZ3PDSzJQvmyQIZKdq0DNkhUwqAu1nIRVTcHrogIKzarkUjd2j
+      +N93LkV6+RHj9vrxk2dP4Qdf2D31x7/YOpTQTjQnr/bO8Fal6JXYvaYAu9d8+BqO49DWb8Jv
+      Xj4bUhGM2+fHK8ebcORSF75w+xrsXJWH10+2xOLyI4IggJs3RN8AJeIzgEwigmGWK5JhOIzb
+      3GBYDiY7H6I22dxgGBZWpxd+hoV/4v8n/fJ+hoXPz6C9n7/12l0+eHz+qdcHKjIxaOT43avn
+      Epak1Tdqw9/e+zD3PxpRXCGoD2H82oZ+/McfD4fd4Nxs9+BHfzs5tSgtFtaXZaJoHgGxUInY
+      AMQUiZwEdF8BgMbu0bjq4wTi3bPt6Bgwg2HZsCeV0PSO2uaVCmnsHsMvXqiNOFOX5TgcONu2
+      aPT9pWIKH9u3QhBBgogNgCAIrCqOf/NnqZhCfQLiD7PxMyyee/8qPF4/xm3xcX0Gw+P1B5WI
+      cbh9+OWLtVFHjjmOb5CeqN5i07l/Z6Vgi29UmWBbq7Pjfluk/WxClainc75lAP1jdnh9oW/F
+      NlZmoTBDD5IkJqTaRaBIAjKJCHlpOogoEgqpmP9viCsuzTBBV/fXTjSHnFi2ECzHQauSJrRB
+      4qriNNyxtXThF4ZIVN8kSavAxoosHL0cH/83QfC58ovFAGg/iyOXusJ6D0XyMZGiTANkYt4V
+      3DlkhtfHQKOUQqOUQirm81sIksDZxv6Fi+05/pA7G5eHxoEz7WFd30KMW914eG819h+qj3t7
+      rKxkDR59YFPEuf+BiDoX+P5dlUHz6YVmTUnGopn8k5xp7A8rpdru8oHlAC/tR9ewBW0DJgyN
+      O9E+YIbF4YHV4QHHcegetqKlZzykqDZJEgEnxeX2YcHLJFmOg8fnxz/dvT4uDSwmyU7R4D8/
+      uT1qt+dsop65Wcka3LujAk+/G9uOkUkaOaoKUnAuQf72YIxb3fPW6s5mdg3r+Wk91ia9SeHK
+      zEvFooBR9mjrZYPR1DOGh/dWQyUX4+fP10YlTx8KFXnJ+PqDm5EURDMpGgQx4bu2lWFNaewO
+      xCKKxD/fswE2gZWYhYDlONAJ7pRp0MjnSINwHBdQTlynkiHDqJ6qOwY+TD8pSNfNqdIiCWJO
+      kf+w2Qnaz2JdWSZ+8IU9MWv8TZEE7ttRgf/61I6YTH5AoEiwiCLxtfs24rt/OSZIq6DpUCSB
+      z926GiuLUnHgTHzrYUPFqFXELQkuEGW5xoAJYYEOxql6JbQqGd9Vx+FFabYSaoUEg+MOFGcZ
+      IBGLQJJ8sh3tZ5GWpMLguANOj3Xa59LwMyxfu5yqxfc+uwsHzrThhSMNgsnFF2bq8blb16As
+      JymqZLeFEGwTp1ZI8dindgTVtowEmUSEr923ETdtKAJBECHvZ1P0SihlYuSmagPWnRrUcsil
+      oqnnJCIKYhE5p95Wowxtv5mXphUkIzNSNlbMTQ0HELQT/JjVhZwULVQKCcrzjHC4fRi3udDU
+      Mwa5VASFjO9+4/MzvJjwrIOIiCJn+OAlYgq3bSnFE1+/FR/ftyJgxV4oUCSBlUWp+NbDW/CT
+      R/ahPIhhC4mgp1eFTIx/+/g2vPpBE54/fDWq9ICCDD0euWMtirM+jPaF+nkquQQ6lQy5qVrQ
+      DItMoxpjVheMWgXOtwwi1aDEmNUFrZKXETTZ3NCr5bC7eT+3zelFklYBj8+PBufCMYfcNB1M
+      Njc6YtyIOxBGrQLVBXMzIomJUsPZtE+kkg+M2eFnWIyYnXB6fJCKRegdsWFw3AGKJOClGTAs
+      73KezCWaRKOQBowHyKVi3LujAndsLUVj9xgutQ3hctsQeob5Es7pxVME+MO7WiFFYaYeK4vS
+      sKo4DVnJmphP+ukI7r6RiCncv7MS68sy8fzhqzjd2B+WuyxZp8Btm0tw84biOeV4of5d/AwL
+      nUoGs8ODVL0SxVlJ8PoY/scleJ97TooWLi+N9n4TCjL0U1uYlUVp6Bq0wEszYNnQrpsiSdyy
+      qQS/fvlMyN9TKPauLQjqhSvM1M9ppjf5W0z+d/KuSvt9Mx6fJFBtbl66bt4orFhEYUVhKp+q
+      fGMNaD+DUasLNqd3SmJGLhXBoJFDF0BfKZ7EzH+Zl67Dv3x0M4ZMDhy91I0r7cPoGDTDRzNT
+      fu1J2RG9So6yXCO2VGWjpig1aEdApSw0Dci+URsGx+xgOb7ouq3PBLfPD5bjwLIc6jtHIBHx
+      8QSW4/jG2RwHmViEN062wD/RBtQbostVo5DghppcvH6yJa5pEUatAjtW5eH4lR5caR+C2e6B
+      UiZGZV4K1pSmY1VROv5KXhG0KTgAbCgPrxecWEQhI0mNjKT4NsEOBcG1QefDRzO8Pr/bB5bl
+      IJWIoFVKg0qCz+Y3L5/BwXMdMb7K8Pn2x7ZiY0UWrnaO4j/+GJ1KdDjsWp2Plt7xgJV5erUM
+      D+6uwrFL3YJ1sQR4o/vNV2+OWdvSeBPXmLZETCEjQDFJqOQJ0BFEaCiSmDr0VeYn4/6dldh/
+      KHKV6FBJ1ilwoq4naEas2e7Bk6+dx6riNEFreu+LYc/eRBC/UJ4ATD8QLxZ0KhlS9R/2Krh3
+      RwV2rc6P6ZhZyRp4fP4F08EZlsPl9mFB0oYB/ny0O8bfLd5cUwZQlGWYV7U5EawuSZ+RhiCi
+      SPzjnWuxe01sJsqq4jSsLEoNWbGZ9rNQK6TYWBFdD+fsFOHzcBYD15QBUCQZ9Q8pNFurc+Y8
+      JhZR+Mc71+GhPdWCNdEjCOC2zSX45kNbwg42tveb8JlbVmHnqryIxq7IS8Z3Pr0z5LjItUTi
+      8loj5Kb1RThwpj3umYiByEnVojKIeKyIInH/zgqsLknDn9++FJWGUnaKBp+5hY+GOz102ELE
+      Tg8Nt5fGV+7dgNUl6Xj64BUMmxaWbNSrZbhlUwnu2loGkQBCtouRa84AclK1WF+eiZP1wnSG
+      iYa7tpXNuyXg+wUk4Tuf3omzTf14q7Yt5AQ1AkB+ug63bC7B1uqcKV8/QQBUmH5zkiBAkgQI
+      gsANNblYW5qBc80DOFnfi7qOYTjdNLiJMeUyMYqzDFhXmoHtK/OW5Ko/nWvOAADg4/tW4ELL
+      YEJTo4sy9di2Yu72JxAiisSmymxsqszmFSSaBqbclzanFz4/A5eHBu1nIZeKUJyVhLWl6agq
+      SIVGKZ0REJRJxMgwqjEaRu6RTiWb4WpWyMS4oSYXN9TkguM4OD00XB4aEjEFjUIqeO/jxUxc
+      4wBCwXEcXj7WiKcOxDYFOxhSMYXvfGbnvE38FoLjOIyYnXj/YhfONQ2ge9gSMNVDKqaQrFNi
+      RWEKNldloyIvGQfPduD3fz8X8lg3byjCF25fk9CI62LlmrwDEASB27eU4mrX6Ix8+njx0J7q
+      qCZ/U88YXjraiPPNAwsGzbw0L0HZN2rDW7VtyE3T4qb1RchP06EzhKizQS3DnVvLlid/EK7J
+      O8AkVqcHj/3pSFyT0PauLcAjd66dUk0LB4fbh78euIz3zndGfYjXKqULxgI0Sim+OnHwXTaA
+      wFzTBgDw/cm++9SxuOTg7FyVhy/dtS4iX3jXkAU/efakIB00JyEIvj0qy3Ezcv8lYgpV+Sn4
+      2L4VKEjXLU/+ebjmDQAArA4PfvZ8LS61hd7JJBwoksCd28rw8N7qiFb+y21D+NH+kzGTFtxS
+      nY1NlVmwOrxQyiUoyjQgPUkV15rda5UlYQAA35vq1Q+a8fzhq/OKRIWLUavAF+9Yg7WlGRGt
+      pO39Jvznn47EXFfzo7ur8MCuyuXVPkyWjAEAvGdlUrbwTJh1CLNRSMXYszYf9++sjFiJwOLw
+      4NHfvhuXckkCwKMPbg7ZNbsMz5IygEk4jkPnkAVvnWrF6Yb+qZY9oZBpVGPP2gJsr8md0Qk+
+      kmv40f6TcQ3YqRUS/PRL+5CqV8VtzGudJWkAk3AcBz/DoqV3HM294+gasmDY5ITN6QHL8Xt7
+      m9MLp5eGXCJCil6JNAO/d9apZEgzqFCYaUBemjbsFODaq334wd8+iHtroS1V2fiXj25e3gqF
+      yJI2gEBwHIdhsxPvnm1HbUMfBsbsC05SvVqGdWUZuHF9EQoz9AtOLoZh8ejv3kVnAmqECQL4
+      2ZduREGGfuEXL3N9GYDN6cXTB6/gUBR++DWl6fjEjTXzFudcbB3EY38+GullRs2Olbn42v2b
+      Ejb+tcQ1GQkOF47jcK55AI///XzUB9LzzYOo7xjBw3urcdvm0jl5MxzHJbxs82zTAGxO75JP
+      ZBOCJe8oZlgWrx5vwvf/+oFg3hgvzeBPb13Cr146Pcfl6vb6Q2pYEUucHjpgM/Bl5rKkDYDl
+      OLx4pBF/OXA5Jg29D1/swi9frJ1hBL2jNsHU0aKhvjOxRnitsGQNgOM4HDzbjmcP1cfUE/NB
+      XS/+/PalKQPrS0CnyEB0CthAeymzZA2ga8iCP755MSYr/2zeqm3F8YkeCcPm0JpRUCQBiYjv
+      AxAMkiDCUp6eTiitUpdZoodg2s/gydfOx7WJ3p/euoTqwtQ5zcMDQRIECjL0yEnRonfEiiGT
+      EyIRH3tgWb4LS2PXKJL1SmgUUoxZXCBJgm8dK5PAS/sX7Pri8sVWsnypsCQN4OTVPjR0x/cQ
+      aHF48PfjTWBDEMViOQ5yqRgjFif0GjmMOiVcHh+0Shl6RqwYs7jAge8iIxFRoCgSmUY1eoat
+      oCgSEppa0AC4xJdMXxMsSQN47YPmhIz77rkO3BBiLs6Y1YVxqwvJOgXfglQigp/hYLK7kW5Q
+      YcjkwPnmQUjEFNRyCTppBkOm0Ht9SSVLS74kViw5A2jtG0dbvykhY7s8qMKeFQAAA7dJREFU
+      NFr6Qht7YIxvXtE3OreJhdXBe5Ecbh/g5huLh0vKNLGuZYKz5A7B55oS20Ip0f2LJ8lfhDKS
+      i5ElZQAcx+FKgoNQDMsmtFnGJELJIS51lpQB8D0A5m4p4gnHAWmGxKYjyyQi1BQL16lnKbOk
+      DMDp9YWsmRlLirNi0zQuVKoLUgJ2h1lmLkvKALw+JuQsT4okkJeuww01uchL00EipiCTUCjO
+      MoAiCZAEH6gSUSTkUtG8AavZrCxKi1lXw1C4fYtwndSXOkvKCxTO3pthOShlYri8NJK0cqgV
+      EihlEjg9NIqyDGAYDtUFKRg2O5CiU+JkfR9GLAvraQJ8c7r7d1aGJV4lFNUFKaguSIn7uNcq
+      S8oAxCKKj5iG2KHFRzPoHrIiw6iGx+eHiCIxbnXB6/dDTJFoHzDzFWMeGhxCT6lQysTYUpWN
+      wxe74pqVKZVQ+OTNK5erwcJgSRmAXCKCSiYJuQa4dcJn3zIhNz7bhTkUgoJyIJI0CohFFL50
+      1zp84/GDAfv1xoIHd1Ute3/CZEmdARQyMdKSEuuBUcklSNbxxfTZKRp85Z4NcdHn2V6Tizu3
+      lsV8nKXGkjIAgiBQlpNYD0xWsgZKuWTqejZVZeORO9fGVHF5U2UWvnTXuutK1VkolpQBAMD6
+      8sBd0+PF5qqsOR6j3avz8e2Ht0IlD63Na6iQBIFbNhXj0Qc2QRqkV/Ay87PkDKAiLxnpCdoG
+      iSgSm6uy5zxOEATWl2fiR1/cg8q8wB1lwkWnkuKf71mPz96yesn17YonS1IV4q3aVjzx2vm4
+      j7tzVR6+cu+Geb0wLMvh6OVuvHq8KSJBX6VcjL1rCnH39jJolbJoLncZLFEDcHtpfP13BwM2
+      kI4VCpkYP3lkLzInegYvhJ9hcaltCCeu9OBC6xCsTk/Q0k2pmEJZrhEbK7KwsTJrOcorIEvS
+      AABekfmxPx+NS0kkAHxs3wrct6MiovfSfgY9w1b0jFhhcXhB+xmIRRR0KinSDCpkp2gFPz8s
+      w7NkDYDjODxzsA4vHGmI+VjryjLwrYe2LtlOikuZJfuLEQSBB3ZVYntNbkzHKczU48v3bFie
+      /NcoS/YOMAntZ/D7V8/h0IVOwT+7LCcJ33p4K/TLe/JrliVvAABfpPLKsSbsP1QvSINtAsDe
+      dQX49EdWha0avczi4rowAIA/E3QNWfCnNy+ivnM04sNxplGNz966GquK05aTzpYA140BTMKw
+      LOraR/BmbWtIbUonKc81Yt+6Qmypyl6Oui4h/j+meao0oaO7pgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Home Team Aggresion' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEVUlEQVR4nO3ayWpTYRyG8dc2WkGcBwSHiqIoDqhVFxbXXbn3LrwDN16IXoUrcaIFV6Vq
+      tbaIA6LGgjikKVqVuPgvKkSrGxvkeX5QUk7P8BG+5zvJoSs6nU4nElRfrwcg9ZIBCM0AhNbo
+      2jI6mty504OhSMuvO4CbN5NLl3owFGn5+RFIaAYgtKUDOHCgXo8f/7uzDQ8nFy8mhw79ed9V
+      q5KDB5NTp5KdO5c+Zt++5MSJOmbNmtq2d2/S3//3Y5N+ofs7wM+OHq3JuXVrsnFjsm5d8vhx
+      cvp0srCQNJvJ3FyyY0dy7VoyNlb7PH2anD+fvHxZE3b9+uTZs2RoKPn8OXn1Krl7t87d6SSr
+      VyeNRrJ9++I1hoaSiYnk0aNkz56kr69iOXkyuXIl2bUr2b8/GRxMvn1Ljh2rL/DDwzX2+fnk
+      /v3a/8aN5P37f/9u6r+z9B3gw4dkcjL58iVZuzZ586Ym3Oho8uRJTd6RkWTLlmRgYPG4wcHk
+      8OEKY/fu5OzZZMOGero0NVUrd6dTrwsLybZtyadPdY1ms46/daviaTSSM2fqp9msydxu15gm
+      J5N37+oOcf16BTI+nrx+XWMdGalzbt78b99F/beWvgNMTyezs8mDB8mmTTWJ792r1XV+vj6S
+      tNu1kn/9WsfMzNTK//BhTcK5uVp9X7xIWq3a/+PH2ndqqkJoteq4/v7Fa7Ra9beVK5OrV+vO
+      MTBQYT1/Xud7+7buEt+/J+fOJbdv1+/tdr3OztbdytVfv7Gi63+BLl/2MagwfAokNAMQmgEI
+      zQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMA
+      oRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgG
+      IDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjN
+      AIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwCh
+      GYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYg
+      NAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0A
+      hGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0AxCaAQjNAIRmAEIzAKEZ
+      gNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCEZgBCMwChGYDQDEBoBiA0
+      AxCaAQjNAIRmAEIzAKEZgNAMQGgGIDQDEJoBCM0AhGYAQjMAoRmA0AxAaAYgNAMQmgEIzQCE
+      ZgBCMwChGYDQDEBoBiA0AxBao2vLkSPJhQs9GIq0/H4AexG8M7xkABcAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Time of Day' width='192'>
+      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
+      c7y55P8BRfDfV97qHhMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
