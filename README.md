@@ -39,7 +39,9 @@ There is a report in this repo that goes into the models in more details. If int
 -------------------------------------------------------------------------------------------------
 ## Misc.
 
-The structure of this project was set up after all of the programming and what not was done, so if you want to run the code I'd recommend putting all of the data and notebooks
+* The structure of this project was set up after all of the programming and what not was done, so if you want to run the code I'd recommend putting all of the data and notebooks
 into the same directory. The file paths will also have to be changed if you were to run them on your machine. 
 
-I have a plan to make this into a Python GUI App using the models created. This would give users the chance to predict a match using various models. 
+* The Random Forest and Neural Network models yielded the same accuracy score however when given an example match the Random Forest was able to accurately predict the outcome where the Neural Network model did not accurately predict the outcome of the match. 
+
+* I have a plan to make this into a Python GUI App using the models created. This would give users the chance to predict a match using various models. 
