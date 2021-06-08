@@ -13,7 +13,7 @@ The data for this came from 'https://www.football-data.co.uk/englandm.php', I us
 -------------------------------------------------------------------------------------------------
 ## Data Preparation
 
-To prepare the data for the Machine Learning algorithms that data had to be processed and some variables needed to be encoded. There wasn't too much done here outside of merging
+To prepare the data for the Machine Learning algorithms the data had to be processed and some variables needed to be encoded. There wasn't too much done here outside of merging
 all of the individual datasets together, removed NaN values, and dropped irrelevant columns/features. When it came to encoding the data, the variables that were encoded are *Season*, *Time*, *Home Team*, *Away Team*, *Match Referee*, and *Full Time Results*.
 
 -------------------------------------------------------------------------------------------------
