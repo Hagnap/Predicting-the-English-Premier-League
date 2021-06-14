@@ -1,6 +1,6 @@
 # Predicting-the-English-Premier-League
 
-By Elvis Dang and Jake Haggard
+### By Elvis Dang and Jake Haggard
 -------------------------------------------------------------------------------------------------
 ## Intro
 
