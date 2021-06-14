@@ -5,7 +5,7 @@
 ## Intro
 
 This was a school project that was made to showcase the Data-Science Workflow. The purpose of this is to predict the outcome of an English Premier League game. 
-The outputs will be the full time result of a mathc; **0** (Home Win), **1** (Away Win), and **2** (Draw).   
+The outputs will be the full time result of a match; **0** (Home Win), **1** (Away Win), and **2** (Draw).   
 
 -------------------------------------------------------------------------------------------------
 ## Data
