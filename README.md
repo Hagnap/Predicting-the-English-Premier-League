@@ -10,7 +10,7 @@ The outputs will be the full time result of a mathc; **0** (Home Win), **1** (Aw
 -------------------------------------------------------------------------------------------------
 ## Data
 
-The data for this came from 'https://www.football-data.co.uk/englandm.php', I used the data from 2014-2015 season to the 2020-2021 season. In this data one main thing was that a porition of the data had a *Time* variable. So I created two types of models, models that use the time variable and models that don't use it. The models that use this variable have less data but delivered better results than the ones without the *Time* variable. 
+The data for this came from 'https://www.football-data.co.uk/englandm.php', we used the data from 2014-2015 season to the 2020-2021 season. In this data one main thing was that a porition of the data had a *Time* variable. So we created two types of models, models that use the time variable and models that don't use it. The models that use this variable have less data but delivered better results than the ones without the *Time* variable. 
 
 -------------------------------------------------------------------------------------------------
 ## Data Preparation
@@ -46,5 +46,3 @@ There is a report in this repo that discusses the models in more details. If int
 into the same directory. The file paths will also have to be changed if you were to run them on your machine. 
 
 * The Random Forest and Neural Network models yielded the same accuracy score however when given an example match the Random Forest was able to accurately predict the outcome where the Neural Network model did not accurately predict the outcome of the match. 
-
-* I have a plan to make this into a Python GUI App using the models created. This would give users the chance to predict a match using various models. 
